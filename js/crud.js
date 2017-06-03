@@ -30,6 +30,17 @@ function Crud(apiEndpoint, apiToken) {
         }
     }
 
+   //created CRUD should pass param
+   
+    this.create = function (param, data, success, failed) {
+        this.request(
+            'POST',
+            param,
+            data,
+            success,
+            failed
+        )
+    };
 
    
 }
