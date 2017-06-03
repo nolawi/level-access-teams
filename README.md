@@ -12,3 +12,6 @@ I spent a lot more than 3 hours, more like 6
 
 ## Local storage
 Left app using local storage with placeholder array from api-json folder, this way i can put this up on github io
+
+### todo
+parentid, itemid and description should be fillable too, currently only using placehoder value 
