@@ -31,7 +31,7 @@ function Crud(apiEndpoint, apiToken) {
     }
 
    //created CRUD should pass param
-   
+   //can also abstract more
     this.create = function (param, data, success, failed) {
         this.request(
             'POST',
@@ -42,5 +42,36 @@ function Crud(apiEndpoint, apiToken) {
         )
     };
 
-   
+    this.read = function (param, success, failed) {
+        this.request(
+            'GET',
+            param,
+            null,
+            success,
+            failed
+        );
+    }
+
+  
+    this.update = function (param, data, success, failed) {
+        this.request(
+            'PUT',
+            param,
+            data,
+            success,
+            failed
+        )
+    };
+
+
+    this.delete = function (param, success, failed) {
+        this.request(
+            'DELETE',
+            param,
+            null,
+            success,
+            failed
+        );
+    }
+
 }
